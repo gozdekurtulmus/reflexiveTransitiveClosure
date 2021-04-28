@@ -1,7 +1,7 @@
 import numpy as np
 import itertools
 
-
+ ##   ALGORITHM ONE       ##
 def algorithmOne(matrixR,listA):
     RKleene = set()
 
@@ -43,6 +43,9 @@ def algorithmOne(matrixR,listA):
 
     print("The reflexive transitive closure R*:\n ",np.array(list(RKleene)))
 
+    
+    
+ ##   ALGORITHM TWO     ##    
 def algorithmTwo(matrixR,listA):
   # Initially R*: R U {(ai,ai) : ai∈A^2 (Makes R* Reflexive)
     RKleene = matrixR
@@ -72,6 +75,8 @@ def algorithmTwo(matrixR,listA):
         
     print("The reflexive transitive closure R*:\n ",RKleene)
     
+    
+   ##   ALGORITHM THREE     ##
 def algorithmThree(matrixR,listA):
     # Initially R*: R U {(ai,ai) : ai∈A^2 (Makes R* Reflexive)
     RKleene = matrixR
